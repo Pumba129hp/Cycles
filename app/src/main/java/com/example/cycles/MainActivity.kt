@@ -30,5 +30,14 @@ class MainActivity : AppCompatActivity() {
         val valueN: EditText = findViewById(R.id.valueN)
         val calc: Button = findViewById(R.id.calc)
         val result: TextView = findViewById(R.id.result)
+
+        calc.setOnClickListener(){
+            val n = valueN.text.toString().toIntOrNull()
+
+            if (n==null || n<1){
+                result.text = "Введите натуральное число n>=1"
+                return@setOnClickListener
+            }
+        }
     }
 }

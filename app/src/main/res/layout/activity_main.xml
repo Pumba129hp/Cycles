@@ -8,7 +8,7 @@
         android:id="@+id/inputN"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Введите число n для подсчёта по формуле \n1/1!+1/2!+1/3!+..+1/n!"/>
+        android:text="Введите натуральное число n для подсчёта по формуле \n1/1!+1/2!+1/3!+..+1/n!"/>
 
     <EditText
         android:id="@+id/valueN"
