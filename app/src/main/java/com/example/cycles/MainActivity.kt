@@ -46,6 +46,8 @@ class MainActivity : AppCompatActivity() {
                 factorial = factorial * i
                 sum = sum + 1.0/factorial
             }
+
+            result.text = "Полученная сумма = $sum"
         }
     }
 }
