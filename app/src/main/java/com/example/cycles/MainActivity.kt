@@ -38,6 +38,14 @@ class MainActivity : AppCompatActivity() {
                 result.text = "Введите натуральное число n>=1"
                 return@setOnClickListener
             }
+
+            var factorial = 1L
+            var sum = 0.0
+
+            for(i in 1..n){
+                factorial = factorial * i
+                sum = sum + 1.0/factorial
+            }
         }
     }
 }
